@@ -1,9 +1,9 @@
-//canvasの設定（せってい）
+//canvasの設定
 const canvas = document.getElementById( 'canvas' );
-canvas.width = 640;		//canvasの横幅（よこはば）
-canvas.height = 640;	//canvasの縦幅（たてはば）
+canvas.width = 640;		//canvasの横幅
+canvas.height = 640;	//canvasの縦幅
  
-//コンテキストを取得（しゅとく）
+//コンテキストを取得
 const ctx = canvas.getContext( '2d' );
  
 //画像のオブジェクトを作成
@@ -22,7 +22,7 @@ key.right = false;
 key.left = false;
 key.push = '';
 
-//マップの作成（さくせい）
+//マップの作成
 const map = [
 	// [0, 0, 1, 0, 1, 0, 0, 0 ,0 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0],
 	// [0, 1, 0, 0, 0, 1, 1, 1 ,0 ,1 ,0 ,1 ,1 ,0 ,1 ,1 ,1 ,0 ,1 ,0],
