@@ -66,6 +66,7 @@ const map = [
 	[1, 1, 1, 1, 1, 1, 1, 1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,0],
 ]
 
+//左移動の仕方
 function moveLeft(){
 	let x = robot.x/32;
 	let y = robot.y/32;
@@ -76,6 +77,7 @@ function moveLeft(){
 	} 
 }
 
+//↑移動の仕方
 function moveUp(){
 	let x = robot.x/32;
 	let y = robot.y/32;
@@ -88,6 +90,7 @@ function moveUp(){
 	}
 }
 
+//右移動の仕方
 function moveRight(){
 	let x = robot.x/32;
 	let y = robot.y/32;
@@ -98,6 +101,7 @@ function moveRight(){
 	}
 }
 
+//下移動の仕方
 function moveDown(){
 	let x = robot.x/32;
 	let y = robot.y/32;
