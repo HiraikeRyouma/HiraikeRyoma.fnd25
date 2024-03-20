@@ -81,7 +81,7 @@
 }
 
 #btndown:hover {
-  background-color: rgb(0, 255, 251);
+  background-color: rgb(76, 0, 255);
 }
 
 #btndown:active {
@@ -149,7 +149,7 @@
 }
 
 #btnleft:hover {
-  background-color: rgb(0, 255, 251);
+  background-color: rgb(76, 0, 255);
 }
 
 #btnleft:active {
