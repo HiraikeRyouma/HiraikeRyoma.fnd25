@@ -114,6 +114,29 @@ function moveDown(){
 	}
 }
 
+//位置によるアラート
+let assessment1Count = 0;
+let assessment2Count = 0;
+let assessment3Count = 0;
+let goalCount = 0;
+function positionCheck(){
+	if (robot.x/32 === 0 && robot.y/32 === 6 && assessment1Count === 0){
+		alert('初日から比べてできることが増えて来ましたね🤗');
+		assessment1Count++;
+	} else if (robot.x/32 === 10 && robot.y/32 === 12 && assessment2Count === 0){
+		alert('伸びしろですねぇ😍');
+		assessment2Count++;
+	} else if (robot.x/32 === 18 && robot.y/32 === 17 && assessment3Count === 0){
+		alert('残すはプレゼンのみ？😋');
+		assessment3Count++;
+	} else if (robot.x/32 === 19 && robot.y/32 === 19 && goalCount === 0){
+		alert('ゴール！無事完走できました😁');
+		goalCount++;
+	} 
+	requestAnimationFrame( main );
+}
+
+
 //メインループ
 function main() {
 //map ブロック作成
@@ -137,11 +160,6 @@ function main() {
 
 	//画像を表示
 	ctx.drawImage( robot.img, robot.x, robot.y );
-	
-	//ゴールした時
-	if (robot.x/32 === 19 && robot.y/32 === 19){
-		alert('ゴール！無事完走できました😁');
-	}
 
 	addEventListener("keydown", keydownfunc, false);
 	addEventListener("keyup", keyupfunc, false);
@@ -175,7 +193,7 @@ function main() {
 	}
 
 
-	requestAnimationFrame( main );
+	requestAnimationFrame( positionCheck );
 
 }
 //ページと依存している全てのデータが読み込まれたら、メインループ開始
