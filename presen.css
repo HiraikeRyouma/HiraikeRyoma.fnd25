@@ -1,3 +1,14 @@
+h1 {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+
+h4 {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
 
 #robot {
   position: absolute;
@@ -7,7 +18,7 @@
 
 #canvas{
   position:absolute;
-  top: 120px;
+  top: 130px;
   left: 200px;
 }
 
@@ -16,7 +27,7 @@
   width: 500px;
   height: 150px;
   position:absolute;
-  top: 760px;
+  top: 770px;
   left: 280px;
   color: black;
   font-size: 20px;
