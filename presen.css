@@ -10,6 +10,12 @@ h4 {
   left: 100px;
 }
 
+h6 {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+}
+
 #robot {
   position: absolute;
   top: 0;
